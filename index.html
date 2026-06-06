@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horror Forest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer" class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        
+        <!-- Flashlight overlay -->
+        <div id="flashlight" class="flashlight"></div>
+        
+        <!-- Game Over Screen -->
+        <div id="gameOverScreen" class="game-over-screen hidden">
+            <div class="game-over-content">
+                <h1>GAME OVER</h1>
+                <p>You were caught by the monster!</p>
+                <button id="restartBtn" class="restart-btn">Restart Game</button>
+            </div>
+        </div>
+        
+        <!-- Jumpscare Screen -->
+        <div id="jumpscareScreen" class="jumpscare-screen hidden">
+            <div class="jumpscare-content">
+                <div class="monster-jumpscare">👹</div>
+            </div>
+        </div>
+        
+        <!-- UI Info -->
+        <div class="ui-info">
+            <p id="distanceInfo">Distance: --</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
